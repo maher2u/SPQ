@@ -62,7 +62,7 @@
             for (var i = 0; i < response.length; i++) {
 
                 var urlTracks = '@Url.Action("Playlist", "Playlist")?id=' + response[i].id;
-                @*var urlExportar = '@Url.Action("ExportToExcel", "Playlist")?id=' + response[i].id;*@
+              
 
                 if (i % 2 == 0) {
                     tableHtml += "<div class='row'> <div class='featurette'>";
@@ -73,7 +73,6 @@
                     tableHtml += "		</p>";
                     tableHtml += "		<p class='lead'>";
                     tableHtml += "          <a href='" + urlTracks + "' class='btn btn-primary btn-sm' role='button'>View</a> &nbsp;&nbsp;";
-                    //tableHtml += "          <a href='" + urlExportar + "' class='btn btn-green btn-sm' role='button'>Exportar</a>";
                     tableHtml += "		</p>";
                     tableHtml += "	</div>";
                     tableHtml += "	<div class='col-md-5 col-md-pull-7'>";
@@ -90,11 +89,10 @@
                     tableHtml += "		</p>";
                     tableHtml += "		<p class='lead'>";
                     tableHtml += "          <a href='" + urlTracks + "' class='btn btn-primary btn-sm' role='button'>View</a> &nbsp;&nbsp;";
-                    //tableHtml += "          <a href='" + urlExportar + "' class='btn btn-green btn-sm' role='button'>Exportar</a>";
                     tableHtml += "		</p>";
                     tableHtml += "	</div>";
                     tableHtml += "	<div class='col-md-5'>";
-                    tableHtml += "		<img class='featurette-image img-responsive center-block' src=" + response[i].images[0].url + ' alt=' + response[i].name + " />";
+                    tableHtml += "		<img class='featurette-image img-responsive center-block' src='" + response[i].images[0].url + "' alt='" + response[i].name + "' />";
                     tableHtml += "	</div>";
                     tableHtml += "</div></div>";
                 }
