@@ -214,6 +214,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Queue.cs" />
     <Compile Include="Models\Spotify Model\AddedBy.cs" />
     <Compile Include="Models\Spotify Model\Album.cs" />
     <Compile Include="Models\Spotify Model\Albums.cs" />

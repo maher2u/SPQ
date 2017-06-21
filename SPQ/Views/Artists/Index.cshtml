@@ -76,7 +76,7 @@
                     tableHtml += "<div class='col-sm-6 col-md-3' style='width:285px !important; height:360px !important'>";
                     tableHtml += "   <div class='thumbnail'>";
                     tableHtml += "      <a href='" + url + "' class='linkArtist'>";
-                    tableHtml += "         <img class='img-responsive' src=" + response[i].images[0].url + ' alt=' + response[i].name + " />";
+                    tableHtml += "         <img class='img-responsive' src=' + response[i].images[0].url +'alt='+ response[i].name +'/>";
                     tableHtml += "         <input type='hidden' id='hdnArtistId' value='" + response[i].id + "' />";
                     tableHtml += "      </a>";
                     tableHtml += "   </div>";
